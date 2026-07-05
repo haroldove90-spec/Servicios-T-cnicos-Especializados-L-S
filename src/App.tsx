@@ -1,4 +1,5 @@
 import React from 'react';
+import { LogOut, RefreshCw } from 'lucide-react';
 import DashboardScreen from './components/DashboardScreen';
 import { ServiceJob, Technician, MaterialItem, UserRole } from './types';
 import { INITIAL_JOBS, TECHNICIANS, INITIAL_MATERIALS } from './data';
@@ -69,52 +70,41 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#010101] text-white flex flex-col antialiased font-sans" id="ls-app-root">
       
-      {/* Simulation / Dev Header Bar to swap roles or reset easily */}
-      <div className="bg-[#0A0A0A] text-white text-[10.5px] px-4 py-2.5 border-b border-[#1F1F1F] flex flex-wrap items-center justify-between gap-3 z-50">
-        <div className="flex items-center space-x-2.5">
-          <span className="font-black tracking-widest text-[#CCA049] uppercase">SERVICIOS TÉCNICOS L&S</span>
-          <span className="text-zinc-750 font-bold">|</span>
-          <span className="text-zinc-400">Simulador de Roles Activos</span>
-        </div>
+      {/* Dynamic Header Bar */}
+      <div className="bg-[#0A0A0A] text-white px-4 py-3 border-b border-[#1F1F1F] flex items-center justify-between gap-3 z-50">
         <div className="flex items-center space-x-3">
-          <div className="flex bg-[#121212] rounded-lg p-0.5 border border-[#1F1F1F]">
-            <button
-              onClick={() => handleRoleChange('client')}
-              className={`px-3 py-1 rounded-md font-bold transition-all cursor-pointer ${
-                isRoleEntered && currentRole === 'client' 
-                  ? 'bg-[#CCA049] text-black shadow-md' 
-                  : 'text-zinc-400 hover:text-white'
-              }`}
-            >
-              Cliente
-            </button>
-            <button
-              onClick={() => handleRoleChange('technician')}
-              className={`px-3 py-1 rounded-md font-bold transition-all cursor-pointer ${
-                isRoleEntered && currentRole === 'technician' 
-                  ? 'bg-[#CCA049] text-black shadow-md' 
-                  : 'text-zinc-400 hover:text-white'
-              }`}
-            >
-              Técnico
-            </button>
-            <button
-              onClick={() => handleRoleChange('admin')}
-              className={`px-3 py-1 rounded-md font-bold transition-all cursor-pointer ${
-                isRoleEntered && currentRole === 'admin' 
-                  ? 'bg-[#CCA049] text-black shadow-md' 
-                  : 'text-zinc-400 hover:text-white'
-              }`}
-            >
-              Administrador
-            </button>
+          {/* Brand Logo Wrapper */}
+          <div className="bg-white p-1 rounded-md h-8 flex items-center justify-center shrink-0 shadow-sm">
+            <img 
+              src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
+              alt="L&S Servicios Técnicos" 
+              className="h-6 w-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
+          <span className="text-zinc-600 font-bold">|</span>
+          <span className="text-xs font-black tracking-wider text-white uppercase">
+            CONSOLA ADMINISTRATIVA
+          </span>
+        </div>
+
+        <div className="flex items-center space-x-2.5">
+          {isRoleEntered && (
+            <button
+              onClick={() => setIsRoleEntered(false)}
+              className="bg-[#121212] hover:bg-[#1C1C1C] border border-[#1F1F1F] hover:border-[#CCA049]/40 px-3 py-1.5 rounded-lg text-[#CCA049] font-extrabold text-[10.5px] transition-all cursor-pointer flex items-center space-x-1.5 shadow-md"
+              title="Salir del rol actual y regresar al portal de selección"
+            >
+              <LogOut className="h-3.5 w-3.5" />
+              <span>Cambiar de Rol</span>
+            </button>
+          )}
           <button
             onClick={handleResetSimulator}
-            className="bg-[#121212] hover:bg-[#1A1A1A] active:bg-black border border-[#1F1F1F] hover:border-[#CCA049]/40 px-3 py-1 rounded-lg text-zinc-300 font-bold transition-all cursor-pointer"
+            className="bg-[#121212] hover:bg-[#1A1A1A] active:bg-black border border-[#1F1F1F] hover:border-[#CCA049]/40 p-2 rounded-lg text-zinc-300 font-bold transition-all cursor-pointer flex items-center justify-center"
             title="Reiniciar base de datos a valores semilla"
           >
-            Reiniciar Base
+            <RefreshCw className="h-3.5 w-3.5" />
           </button>
         </div>
       </div>
