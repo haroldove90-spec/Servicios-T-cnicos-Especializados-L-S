@@ -1,0 +1,10 @@
+{
+  "name": "Servicios Técnicos Generales L & S",
+  "description": "Aplicación móvil y panel de administración para gestión de plomería, electricidad, gas, herrería y mantenimientos en general.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
