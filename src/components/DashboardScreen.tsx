@@ -97,14 +97,13 @@ export default function DashboardScreen({
         >
           {/* Brand Identity with Logo Image */}
           <div className="space-y-4 flex flex-col items-center">
-            <div className="relative p-1 rounded-2xl bg-[#121212] border border-[#CCA049]/20 shadow-lg max-w-[240px] overflow-hidden" id="portal-logo-wrapper">
-              <img 
-                src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
-                alt="L&S Servicios Técnicos" 
-                className="w-full h-auto rounded-xl object-contain max-h-[85px]"
-                referrerPolicy="no-referrer"
-              />
-            </div>
+            <img 
+              src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
+              alt="L&S Servicios Técnicos" 
+              className="w-auto h-24 object-contain"
+              referrerPolicy="no-referrer"
+              id="portal-logo"
+            />
             <div>
               <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
                 Servicios Técnicos Generales <span className="text-[#CCA049]">L & S</span>

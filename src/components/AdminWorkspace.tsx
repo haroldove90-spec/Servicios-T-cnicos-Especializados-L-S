@@ -285,13 +285,11 @@ export default function AdminWorkspace({
       {/* 2. RIGHT-SIDE NAVIGATION BAR (Desktop: hidden lg:flex) */}
       <div className="fixed right-0 top-0 bottom-0 w-24 bg-[#0A0A0A] border-l border-[#1F1F1F] flex flex-col items-center justify-between py-6 z-40 hidden lg:flex shadow-2xl">
         <div className="flex flex-col items-center space-y-2">
-          <div className="relative p-1 rounded-xl bg-black border border-[#CCA049]/20 w-16 h-16 flex items-center justify-center overflow-hidden mb-4">
-            <img 
-              src="https://appdesign.appdesignproyectos.com/lysicono.png" 
-              alt="Icon" 
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <img 
+            src="https://appdesign.appdesignproyectos.com/lysicono.png" 
+            alt="Icon" 
+            className="w-14 h-14 object-contain mb-3 shrink-0"
+          />
           <div className="text-center">
             <span className="text-[8px] font-black text-[#CCA049] uppercase tracking-wider block">Admin</span>
             <span className="text-[7px] text-zinc-500 font-bold block">L&S</span>
@@ -372,13 +370,11 @@ export default function AdminWorkspace({
       {/* Top Header Row with L&S Brand Logo */}
       <div className="flex items-center justify-between border-b border-[#1F1F1F] pb-4 mb-6" id="admin-workspace-brand-header">
         <div className="flex items-center space-x-3">
-          <div className="bg-[#0A0A0A] p-1.5 rounded-xl border border-[#1F1F1F] shadow-md max-w-[150px] overflow-hidden">
-            <img 
-              src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
-              alt="L&S Logo" 
-              className="h-10 w-auto object-contain"
-            />
-          </div>
+          <img 
+            src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
+            alt="L&S Logo" 
+            className="h-12 w-auto object-contain shrink-0"
+          />
           <div className="text-left">
             <h1 className="text-lg font-black text-white tracking-tight leading-none">CONSOLA ADMINISTRATIVA L&S</h1>
             <span className="text-[9px] font-black text-[#CCA049] uppercase tracking-widest mt-1 block">Operaciones & Finanzas en Tiempo Real</span>

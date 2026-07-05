@@ -73,15 +73,13 @@ export default function App() {
       {/* Dynamic Header Bar */}
       <div className="bg-[#0A0A0A] text-white px-4 py-3 border-b border-[#1F1F1F] flex items-center justify-between gap-3 z-50">
         <div className="flex items-center space-x-3">
-          {/* Brand Logo Wrapper */}
-          <div className="bg-white p-1 rounded-md h-8 flex items-center justify-center shrink-0 shadow-sm">
-            <img 
-              src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
-              alt="L&S Servicios Técnicos" 
-              className="h-6 w-auto object-contain"
-              referrerPolicy="no-referrer"
-            />
-          </div>
+          {/* Brand Logo */}
+          <img 
+            src="https://appdesign.appdesignproyectos.com/lyslogo.jpg" 
+            alt="L&S Servicios Técnicos" 
+            className="h-10 w-auto object-contain shrink-0"
+            referrerPolicy="no-referrer"
+          />
           <span className="text-zinc-600 font-bold">|</span>
           <span className="text-xs font-black tracking-wider text-white uppercase">
             CONSOLA ADMINISTRATIVA
