@@ -1,19 +1,19 @@
 {
-  "name": "Zeebra",
-  "short_name": "Zeebra",
+  "name": "Servicios Técnicos L&S",
+  "short_name": "L&S",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#3db5d7",
-  "theme_color": "#3db5d7",
-  "description": "Portal clínico veterinario interactivo Zeebra con accesos para Administrador, Veterinario, Recepción y Cliente.",
+  "background_color": "#010101",
+  "theme_color": "#CCA049",
+  "description": "Portal de Servicios Técnicos L&S para clientes, técnicos y administración.",
   "icons": [
     {
-      "src": "https://appdesign.appdesignproyectos.com/zeebraicono.png",
+      "src": "https://appdesign.appdesignproyectos.com/lysicono.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://appdesign.appdesignproyectos.com/zeebraicono.png",
+      "src": "https://appdesign.appdesignproyectos.com/lysicono.png",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -8,10 +8,10 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
       .then(reg => {
-        console.log('Zeebra SW registered successfully with scope:', reg.scope);
+        console.log('L&S SW registered successfully with scope:', reg.scope);
       })
       .catch(err => {
-        console.error('Zeebra SW registration failed:', err);
+        console.error('L&S SW registration failed:', err);
       });
   });
 }

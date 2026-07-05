@@ -1,4 +1,4 @@
-const CACHE_NAME = 'zeebra-cache-v1';
+const CACHE_NAME = 'lys-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
